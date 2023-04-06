@@ -55,11 +55,23 @@ class MyHomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
-            child: Image.network(
-              'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User-Interfaces-and-Usability/main/report界面.png',
-              width: MediaQuery.of(context).size.width * 0.6,
-              //height: null,
-              fit: BoxFit.scaleDown,
+            child: Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Image.network(
+                'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User-Interfaces-and-Usability/main/report_card.png',
+                width: MediaQuery.of(context).size.width * 0.5,
+                fit: BoxFit.scaleDown,
+              ),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Image.network(
+                'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User-Interfaces-and-Usability/main/main-page-body2.png',
+                width: MediaQuery.of(context).size.width * 1.4,
+                fit: BoxFit.scaleDown,
+              ),
             ),
           ),
         ],
