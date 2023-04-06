@@ -49,9 +49,9 @@ class MyHomePage extends StatelessWidget {
           Expanded(
             child: Image.network(
               'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User-Interfaces-and-Usability/main/report界面.png',
-              width: MediaQuery.of(context).size.width * 0.6, // 将宽度缩小50%
-              //height: null, // 根据高度自动调整大小
-              fit: BoxFit.scaleDown, // 缩小图片
+              width: MediaQuery.of(context).size.width * 0.6,
+              //height: null,
+              fit: BoxFit.scaleDown,
             ),
           ),
         ],
@@ -64,19 +64,19 @@ class MyHomePage extends StatelessWidget {
         unselectedLabelStyle: TextStyle(color: Colors.grey[600]),
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home, color: Colors.grey[600]),
+            icon: Icon(Icons.home),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.description, color: Colors.grey[600]),
+            icon: Icon(Icons.description),
             label: 'Report',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.stream, color: Colors.grey[600]),
+            icon: Icon(Icons.stream),
             label: 'Explore',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person, color: Colors.grey[600]),
+            icon: Icon(Icons.person),
             label: 'Me',
           ),
         ],
