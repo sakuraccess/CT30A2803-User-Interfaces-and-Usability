@@ -6,9 +6,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My iOS App',
+      title: 'Carbon Footprint Report',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: 'Times New Roman',
+        textTheme: TextTheme(
+          headline6: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.green,
+          ),
+        ),
       ),
       home: MyHomePage(),
     );
@@ -20,22 +27,28 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My iOS App'),
+        title: Text(
+          'Carbon Footprint Report',
+          style: TextStyle(
+            color: Colors.green,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        elevation: 1.0,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Container(
+          /*Container(
             margin: EdgeInsets.all(16.0),
             child: Text(
               'Welcome to my iOS app!',
-              style: TextStyle(
-                fontSize: 24.0,
-                fontWeight: FontWeight.bold,
-              ),
+              style: Theme.of(context).textTheme.headline6,
             ),
-          ),
-          Expanded( 
+          ),*/
+          Expanded(
             child: Image.network(
               'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User-Interfaces-and-Usability/main/report界面.png',
               fit: BoxFit.cover,
@@ -44,10 +57,11 @@ class MyHomePage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.grey[600],
-  			unselectedItemColor: Colors.grey[600],
-  			selectedLabelStyle: TextStyle(color: Colors.grey[600]),
-  			unselectedLabelStyle: TextStyle(color: Colors.grey[600]),
+        unselectedItemColor: Colors.grey[600],
+        selectedLabelStyle: TextStyle(color: Colors.grey[600]),
+        unselectedLabelStyle: TextStyle(color: Colors.grey[600]),
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home, color: Colors.grey[600]),
