@@ -58,7 +58,7 @@ class MyHomePage extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(16.0),
               child: Image.network(
-                'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User-Interfaces-and-Usability/main/report_card.png',
+                'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User_Interfaces_and_Usability-Project/main/report_card.png',
                 width: MediaQuery.of(context).size.width * 0.5,
                 fit: BoxFit.scaleDown,
               ),
@@ -68,7 +68,7 @@ class MyHomePage extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(8.0),
               child: Image.network(
-                'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User-Interfaces-and-Usability/main/main-page-body2.png',
+                'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User_Interfaces_and_Usability-Project/main/main-page-body2.png',
                 width: MediaQuery.of(context).size.width * 1.4,
                 fit: BoxFit.scaleDown,
               ),
