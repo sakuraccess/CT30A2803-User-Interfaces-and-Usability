@@ -48,7 +48,7 @@ class MyHomePage extends StatelessWidget {
           ),*/
           Expanded(
             child: Image.network(
-              'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User-Interfaces-and-Usability/main/report-total.png',
+              'https://raw.githubusercontent.com/sakuraccess/CT30A2803-User_Interfaces_and_Usability-Project/main/report-total.png',
               width: MediaQuery.of(context).size.width * 0.6,
               //height: null,
               fit: BoxFit.scaleDown,
